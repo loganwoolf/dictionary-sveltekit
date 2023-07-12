@@ -1,0 +1,30 @@
+html {
+	--border-base: 2px solid black;
+	--font-family: monospace;
+
+	--drop-shadow-offset: 4px;
+	--drop-shadow: var(--drop-shadow-offset) var(--drop-shadow-offset) 0 black;
+	--drop-shadow-semi: var(--drop-shadow-offset) var(--drop-shadow-offset) 0 lightgrey;
+}
+
+body {
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	margin: 0;
+	min-height: 100vh;
+	font-family: var(--font-family);
+}
+
+input,
+button {
+	font-family: var(--font-family);
+	border: var(--border-base);
+	border-radius: 0;
+	background-color: unset;
+}
+
+input:focus {
+	box-shadow: var(--drop-shadow);
+	outline: unset;
+}
